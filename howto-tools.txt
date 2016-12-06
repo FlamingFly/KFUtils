@@ -1,0 +1,27 @@
+Requirements:
+	- have KillingFloor and it's SDK installed
+	- have administrator rights
+	- (optional) have Notepad++ installed
+	
+Setup steps:
+	1) Install UnCodeX from the provided installer
+	2) Set up a folder for non-project sources outside the Git repository
+	3) Extract KF-sources.7z to the folder from step 2
+	4) Start UnCodeX go to Tree > Settings. In the "Source Paths" menu add all subfolders of the folder from step 2 in the followin order
+		sdk
+		serverperks
+		scrn
+		weapons-original
+	5) While in the "Source Paths" menu add the "sources" folder from the Git repository
+	6) Close settings and run Tree > Rebuild and Analyse
+	7) Copy Export.bat, KFed.bat and UC.bat to KF's System folder
+	8) Copy build.bat and build.ini to some accessible location (eg. Git repository's root)
+	9) Edit your copy of build.bat and change paths in the settings section to reflect your folder layout.
+	10) (optional) if you are using Notepad++, extract and import (Language > User Defined > Import) the UnrealScript language definition from "Unrealscript Highlighter.zip". 
+
+Usage:
+	UnCodeX		- user friandly sources browser woth class hierarchy, package listing and fulltext search
+	build.bat	- builds the project (using build.ini) saving a copy of the built files to builds folder (see settings section of the script)
+	Export.bat	- when placed into games System folder, allows for easy batchexport of classes from package, just provide package name without extension as commandline parameter
+	KFed.bat	- starts KFed with -nogamma option to prevent serious eye damage
+	UC.bat		- wraps the UCC.exe and deletes steam_appid.txt generated on every run of UCC.exe that prevents you from connecting to servers (game stuck on "Connecting")

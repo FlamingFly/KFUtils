@@ -1,0 +1,1 @@
+start KFEd.exe -nogamma

@@ -1,0 +1,6 @@
+Som terms we need to get right considering weapons:
+	BULLET		- the piece of metal that flies from the barren when you shoot
+	ROUND		- the whole package that goes into gun's chamber. the BULLET, case, gunpowder and primer
+	MAG			- see MAGAZINE
+	MAGAZINE	- metal or plastic container for the ROUNDs that allows feeding them to the chamber to be shot
+	CLIP		- usually a metal ROUND holder used for rapid refilling of MAGAZINEs
